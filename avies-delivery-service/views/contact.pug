@@ -1,0 +1,29 @@
+extends ./layout.pug
+
+block content
+  .jumbotron.jumbotron-fluid
+    .container
+      .card.mx-auto
+        img.card-img-top.mx-auto(src='/img/contact.png' alt='Contact us')
+        .card-body
+          h5.card-title Contact Us
+          p.card-text 
+          .info.mx-auto
+            form
+              .form-group
+                label(for='InputEmail1') Name*
+                input#InputText1.form-control(type='text' aria-describedby='emailHelp')
+                small#textHelp.form-text.text-muted We&apos;ll never share your info with anyone else.
+              br
+              .form-group
+                label(for='InputEmail1') Email Address*
+                input#InputEmail1.form-control(type='email')
+          br
+          button.btn.btn-primary(type='button' data-toggle='modal' data-target='#confirmationModal') Submit
+  #confirmationModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='confirmationModalLabel' aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header.mx-auto Success!
+        .modal-body Thank you for your submission, we will get back to you as soon as possible. Please be advised that it may take an upwards of 3 to 5 business days to receive a response.
+        br
+
