@@ -1,0 +1,31 @@
+extends ./layout.pug
+
+block content
+    header.masthead(style="background-image: url('img/home-bg.jpg')")
+      .overlay
+      .container
+        .row
+          .col-lg-8.col-md-10.mx-auto
+            .site-heading
+              h1 My Personal Blog
+              span.subheading All about my personal thoughts, inspiration, ideas and much more
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          .post-preview
+            a(href='/post-2')
+              h2.post-title An Official Update
+            p.post-meta Posted by: 
+              a(href='https://ca.linkedin.com/in/devon-khosa-0b94a61a2') Devon Khosa on February 10, 2021
+          hr
+          .post-preview
+            a(href='/post-1')
+              h2.post-title My First Post
+              h3.post-subtitle Hello!
+            p.post-meta Posted by: 
+              a(href='https://ca.linkedin.com/in/devon-khosa-0b94a61a2') Devon Khosa on March 12, 2020
+          hr
+
+          //.clearfix
+            a.btn.btn-primary.float-right(href='#') Older Posts &rarr;
+    hr

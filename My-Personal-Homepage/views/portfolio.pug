@@ -1,0 +1,32 @@
+extends ./layout.pug
+
+block content
+ .jumbotron.jumbotron-fluid
+  .container
+      //h1.display-4 Portfolio
+      //hr.my-4
+ .body
+  .container-fluid
+    .row
+      .col-12.col-md-6.col-lg-4
+        .card
+          .img-round
+            a(href='https://frozen-hollows-58282.herokuapp.com/' title='' target='_blank')
+              img.card-img-top(src='/img/comit-chat-app-NEW.png' alt='My COMIT Chat Application')
+          .card-body
+            p.card-text One of my first projects, created during my time in the ComIT NodeJS program.
+      .col-12.col-md-6.col-lg-4
+        .card
+          .img-round
+            a(href='https://github.com/devonkhosa/electron-shopping-list' target='_blank')
+              img.card-img-top(src='/img/electron-shopping-list.png' alt='Shopping List App')
+          .card-body
+            p.card-text A shopping list built using Electron, following the Traversy Media Youtube tutorial.
+      .col-12.col-md-6.col-lg-4
+        .card
+          .img-round
+            a(href='' target='_blank')
+              img.card-img-top(src='/img/placeholder.png' alt='CPU temperature')
+          .card-body
+            p.card-text TBD
+      .col-12.col-md-6.col-lg-4

@@ -1,0 +1,20 @@
+extends ./layout.pug
+
+block content
+  .jumbotron.jumbotron-fluid
+    .container
+      h1.display-4 Send us a message!
+      hr.my-4
+      .container
+          br 
+      div
+      form(action='/send' method='get')
+        div
+          label Email Address
+          input.form-control(name='subject' placeholder='name@example.com')
+          br 
+        div
+          label Message
+          textarea.form-control(name='text' cols='40' rows='5' placeholder='')
+          br
+        button.btn.btn-secondary.btn-sm Click Here To Send

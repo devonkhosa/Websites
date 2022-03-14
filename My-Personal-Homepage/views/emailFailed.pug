@@ -1,0 +1,9 @@
+extends ./layout.pug
+
+block content
+  .jumbotron.jumbotron-fluid
+    .container
+      h1.display-4 Sorry, Something Went Wrong!
+      hr.my-4 
+      p.lead.intro Please check your email address and try again.
+      input.btn.btn-secondary.btn-sm(type='button' value='Return to Previous Page' onclick='history.back()')
